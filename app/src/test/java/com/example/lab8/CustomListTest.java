@@ -39,6 +39,9 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
+    /**
+     * adds a city then checks if it returns true
+     */
     @Test
     public void hasCityTest(){
         list = MockCityList();
@@ -49,6 +52,10 @@ public class CustomListTest {
 
     }
 
+    /**
+     * adds then deletes cities then uses hasCity
+     * to check if it returns false
+     */
     @Test
     public void deleteCityTest(){
         list = MockCityList();
@@ -60,6 +67,10 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
     }
 
+    /**
+     * adds city then uses assertEquals to check if its 1
+     * then deleteCity to check if its 0
+     */
     @Test
     public void countCitiesTest(){
         list = MockCityList();
