@@ -66,10 +66,10 @@ public class CustomListTest {
         City city = new City("Edmonton", "AB");
         list.addCity(city);
 
-        assertEquals(1, list.countCities());
+        assertEquals(1, list.countCities(city));
 
         list.deleteCity(city);
-        assertEquals(0,list.countCities());
+        assertEquals(0,list.countCities(city));
     }
 
 
